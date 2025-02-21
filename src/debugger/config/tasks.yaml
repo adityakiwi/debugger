@@ -1,0 +1,35 @@
+analyze_root_cause:
+  description: "Perform a thorough analysis of the code issue to identify the root cause"
+  agent: rca_agent
+  expected_output: "A detailed analysis of the root cause including:
+    - Issue description
+    - Affected components
+    - Error patterns
+    - System dependencies involved
+    - Impact assessment"
+
+generate_solutions:
+  description: "Generate multiple potential solutions for the identified issue"
+  agent: solution_generator
+  context: "Using the root cause analysis, develop 2-3 different approaches to fix the issue"
+  expected_output: "Multiple solution proposals including:
+    - Detailed implementation steps
+    - Required code changes
+    - Pros and cons of each approach
+    - Implementation complexity
+    - Required dependencies"
+
+evaluate_solutions:
+  description: "Evaluate and rank the proposed solutions"
+  agent: solution_evaluator
+  context: "Review all proposed solutions and evaluate them based on:
+    - Code quality
+    - Performance impact
+    - Maintainability
+    - Implementation effort
+    - Risk assessment"
+  expected_output: "A ranked list of solutions with:
+    - Detailed evaluation of each solution
+    - Comparative analysis
+    - Recommended approach
+    - Implementation risks and mitigation strategies"
